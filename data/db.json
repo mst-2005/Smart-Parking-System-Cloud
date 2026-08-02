@@ -1,0 +1,96 @@
+{
+  "users": [
+    {
+      "email": "admin@gmail.com",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "email": "user@gmail.com",
+      "username": "user",
+      "password": "user123",
+      "role": "user"
+    }
+  ],
+  "bookings": [
+    {
+      "slotId": "A-2",
+      "zone": "A",
+      "vehicleType": "two-wheeler",
+      "date": "2026-04-19",
+      "time": "12:00",
+      "duration": 2,
+      "status": "active",
+      "estimatedCharge": "40.00",
+      "bookingId": "BK-1776486476713",
+      "userEmail": "admin@gmail.com"
+    },
+    {
+      "slotId": "C-4",
+      "zone": "C",
+      "vehicleType": "ev",
+      "date": "2026-04-18",
+      "time": "12:00",
+      "duration": 2,
+      "status": "refunded",
+      "estimatedCharge": "120.00",
+      "bookingId": "BK-1776486060956",
+      "userEmail": "user@gmail.com",
+      "finalCharge": "6.00",
+      "actualExitTime": "9:51:16 AM"
+    }
+  ],
+  "pricing": {
+    "two-wheeler": {
+      "amount": 20,
+      "model": "per_hour"
+    },
+    "four-wheeler": {
+      "amount": 40,
+      "model": "per_hour"
+    },
+    "ev": {
+      "amount": 60,
+      "model": "per_hour"
+    }
+  },
+  "zones": [
+    {
+      "id": "A",
+      "name": "Zone A",
+      "description": "Premium convenience – located directly at the Main Entrance with automated sensor tracking.",
+      "totalSpaces": 50,
+      "distance": 0.05,
+      "availablePercent": 59,
+      "optimalVehicle": "four-wheeler"
+    },
+    {
+      "id": "B",
+      "name": "Zone B",
+      "description": "East wing – open-air parking facilities with streamlined exit corridors.",
+      "totalSpaces": 50,
+      "distance": 0.22,
+      "availablePercent": 76,
+      "optimalVehicle": "two-wheeler"
+    },
+    {
+      "id": "C",
+      "name": "Zone C (For EVs only)",
+      "description": "Climate-controlled basement with high-speed EV charging infrastructure.",
+      "totalSpaces": 49,
+      "distance": 0.48,
+      "availablePercent": 33,
+      "optimalVehicle": "ev"
+    },
+    {
+      "id": "D",
+      "name": "Zone D",
+      "description": "North block – high-capacity parking for long-term stays and commuters.",
+      "totalSpaces": 44,
+      "distance": 0.85,
+      "availablePercent": 50,
+      "optimalVehicle": "two-wheeler"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "smart-city-parking-cloud",
+  "version": "1.0.0",
+  "description": "Lightweight single-process cloud deployable ParkSpot+ smart city parking system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "cd frontend && npm install && npm run build",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "smart-city",
+    "parking-app",
+    "cloud-deployable",
+    "express",
+    "react",
+    "lightweight"
+  ],
+  "author": "ParkSpot+ Team",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
