@@ -1,4 +1,4 @@
-# --- Stage 1: Build Frontend ---
+# Stage 1: Build Frontend
 FROM node:20-alpine AS builder
 WORKDIR /app/frontend
 
@@ -8,7 +8,7 @@ RUN npm ci
 COPY frontend/ ./
 RUN npm run build
 
-# --- Stage 2: Production Server ---
+# Stage 2: Production Server
 FROM node:20-alpine AS runner
 WORKDIR /app
 ENV NODE_ENV=production
